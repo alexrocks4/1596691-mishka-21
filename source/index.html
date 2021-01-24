@@ -1,12 +1,134 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+    <header class="page__header page-header">
+      <div class="page-header__main-row">
+        <div class="page-header__main-row-wrapper wrapper-fluid wrapper-fluid--greater-medium-viewport">
+          <div class="page-header__logo-container">
+            <div class="page-header__logo-wrapper wrapper-fluid wrapper-fluid--small-viewport">
+              <a class="page-header__logo" aria-label="Главная">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+                  <img class="page-header__logo-img" src="img/mishka-logo-mobile.svg" alt="Логотип магазина. Надпись Мишка." width="86" height="35">
+                </picture>
+              </a>
+              <button class="page-header__toggle nav-toggle nav-toggle--opened" type="button" aria-label="Переключатель главного меню"></button>
+            </div>
+          </div>
+          <nav class="page-header__main-nav main-nav main-nav--top">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <div class="wrapper-fluid wrapper-fluid--small-viewport">
+                  <a class="main-nav__link" href="catalog.html">
+                    <span class="main-nav__link-content">Каталог товаров</span>
+                  </a>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <div class="wrapper-fluid wrapper-fluid--small-viewport">
+                  <a class="main-nav__link" href="form.html">
+                    <span class="main-nav__link-content">Вязание на заказ</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <ul class="page-header__actions actions">
+            <li class="actions__item actions__item--search">
+              <div class="wrapper-fluid wrapper-fluid--small-viewport">
+                <a class="actions__link actions__link--search" href="blank.html" aria-label="Поиск по сайту">
+                  <span class="actions__link-content actions__link-content--search">Поиск по сайту</span>
+                </a>
+              </div>
+            </li>
+            <li class="actions__item actions__item--basket">
+              <div class="wrapper-fluid wrapper-fluid--small-viewport">
+                <a class="actions__link actions__link--basket" href="blank.html">
+                  <span class="actions__link-content actions__link-content--basket">Корзина: пока пуста</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-header__secondary-row">
+        <div class="page-header__secondary-row-wrapper wrapper-fluid wrapper-fluid--greater-medium-viewport">
+          <nav class="page-header__main-nav main-nav main-nav--bottom">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <div class="wrapper-fluid wrapper-fluid--small-viewport">
+                  <a class="main-nav__link" href="catalog.html">
+                    <span class="main-nav__link-content">Каталог товаров</span>
+                  </a>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <div class="wrapper-fluid wrapper-fluid--small-viewport">
+                  <a class="main-nav__link" href="form.html">
+                    <span class="main-nav__link-content">Вязание на заказ</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <ul class="page-header__secondary-nav-list secondary-nav-list">
+            <li class="secondary-nav-list__item">
+              <a class="secondary-nav-list__link" href="blank.html">Новые поступления</a>
+            </li>
+            <li class="secondary-nav-list__item">
+              <a class="secondary-nav-list__link" href="blank.html">Распродажа</a>
+            </li>
+          </ul>
+          <p class="page-header__info">Бесплатная доставка по России</p>
+        </div>
+      </div>
+    </header>
+    <main class="index-page-main">
+      <h1 class="visually-hidden">Интернет-магазин игрушек ручной работы и предметов интерьера Мишка</h1>
+      <section class="index-page-main__promo promo">
+        <h2 class="visually-hidden">"Основные товары</h2>
+        <div class="wrapper-fluid wrapper-fluid--greater-medium-viewport">
+          <figure class="promo__figure">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/promo-desktop.webp 1x, img/promo-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-tablet.webp 1x, img/promo-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/promo-desktop.jpg 1x, img/promo-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x">
+              <img class="promo__img" src="img/promo-mobile.jpg" srcset="img/promo-mobile@2x.jpg 2x" width="320" height="373" alt="Деревянная белая полка в форме домика с вязаными корзинами и игрушками">
+            </picture>
+            <figcaption class="promo__caption">Милые штуки <br class="br br--small-viewport">&#x20;ручной<span class="space space--lower-large-viewport">&nbsp;</span><br> работы для дома</figcaption>
+          </figure>
+          <ul class="promo__goods goods">
+            <li class="goods__item">
+              <a class="goods__link goods__link--interior-goods" href="blank.html">
+                <div class="wrapper-fluid wrapper-fluid--small-viewport">
+                  <p class="goods__link-content">Предметы<br> интерьера</p>
+                </div>
+              </a>
+            </li>
+            <li class="goods__item">
+              <a class="goods__link goods__link--toys" href="blank.html">
+                <div class="wrapper-fluid wrapper-fluid--small-viewport">
+                  <p class="goods__link-content">Детские<br> игрушки</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="index-page-main__goods-of-the-week goods-of-the-week">
+        DDD
+      </section>
+    </main>
   </body>
 </html>

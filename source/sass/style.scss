@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+//Variables
+@import "global/variables/breakepoints.scss";
+@import "global/variables/colors.scss";
+@import "global/variables/paddings.scss";
+
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+
+//Global blocks
+@import "blocks/page.scss";
+@import "blocks/wrapper-fluid.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/br.scss";
+@import "blocks/space.scss";
+
+//Header
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/nav-toggle.scss";
+@import "blocks/secondary-nav-list.scss";
+@import "blocks/actions.scss";
+
+//Index page
+@import "blocks/index-page-main.scss";
+@import "blocks/promo.scss";
+@import "blocks/goods.scss";

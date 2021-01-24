@@ -1,0 +1,129 @@
+.actions {
+  @include list-reset;
+
+  @media (min-width: $medium-viewport-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 348px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    justify-content: flex-end;
+    order: 3;
+    padding-right: 2px;
+    width: 430px;
+  }
+}
+
+.actions__item {
+  border-bottom: 1px solid $color-light-special-1;
+
+  @media (min-width: $medium-viewport-width) {
+    border-bottom: none;
+    border-left: 1px solid $color-light-special-1;
+  }
+}
+
+.actions__item--search {
+  @media (min-width: $medium-viewport-width) {
+    width: 82px;
+  }
+}
+
+.actions__item--basket {
+  @media (min-width: $medium-viewport-width) {
+    box-sizing: border-box;
+    width: 265px;
+  }
+}
+
+.actions__link {
+  @include link-reset;
+
+  @media (max-width: $small-viewport-max-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &::before {
+      flex-grow: 1;
+      width: 0;
+      content: "";
+    }
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    display: block;
+    position: relative;
+  }
+}
+
+.actions__link--search {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 2px;
+
+  &::after {
+    margin-top: 4px;
+    margin-right: 26px;
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+    content: "";
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    padding: 36px 31px 34px 33px;
+
+    &::after {
+      position: absolute;
+      top: 36px;
+      left: 33px;
+      margin: 0;
+    }
+  }
+}
+
+.actions__link--basket {
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  &::after {
+    margin-top: 2px;
+    margin-right: 25px;
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 18px;
+    width: 21px;
+    height: 18px;
+    content: "";
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    padding-top: 33px;
+    padding-bottom: 31px;
+    padding-left: 82px;
+
+    &::after {
+      position: absolute;
+      top: 35px;
+      left: 31px;
+      margin: 0;
+    }
+  }
+}
+
+.actions__link-content {
+  @media (max-width: $small-viewport-max-width) {
+    flex-grow: 1;
+    order: 3;
+    width: 214px;
+  }
+}
+
+.actions__link-content--search {
+  @media (min-width: $medium-viewport-width) {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+.secondary-nav-list {
+  @include list-reset;
+  display: none;
+  width: 395px;
+  font-size: 15px;
+
+  @media (min-width: $large-viewport-width) {
+    display: grid;
+    grid-template-columns: 175px 175px;
+    column-gap: 45px;
+    row-gap: 30px;
+  }
+}
+
+.secondary-nav-list__link {
+  @include link-reset;
+}

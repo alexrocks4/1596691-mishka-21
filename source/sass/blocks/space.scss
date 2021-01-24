@@ -1,0 +1,5 @@
+.space--lower-large-viewport {
+  @media (min-width: $large-viewport-width) {
+    display: none;
+  }
+}

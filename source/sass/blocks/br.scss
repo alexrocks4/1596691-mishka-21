@@ -1,0 +1,5 @@
+.br--small-viewport {
+  @media (min-width: $medium-viewport-width) {
+    display: none;
+  }
+}
