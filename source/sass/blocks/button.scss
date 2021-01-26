@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.button--basic {
+  border: 2px solid $color-dark;
+  color: $color-dark;
+}
+
+.button--primary {
+  background-color: $color-primary;
+  color: $color-light-light;
+}
+
+.button--index {
+  line-height: 20px;
+  font-size: 18px;
+
+  @media (min-width: $medium-viewport-width) {
+    font-size: 17px;
+  }
+}

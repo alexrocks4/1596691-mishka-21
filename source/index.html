@@ -127,25 +127,41 @@
         </div>
       </section>
       <section class="index-page-main__product-of-the-week product-of-the-week">
-        <h2 class="product-of-the-week__title">Товар недели</h2>
-        <p class="product-of-the-week__name">Вязаные корзинки</p>
-        <p class="product-of-the-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <dl class="product-of-the-week__details">
-          <dt class="product-of-the-week__details-term">Цвет:</dt>
-          <dd class="product-of-the-week__details-definition">«Тиффани»/серый</dd>
-          <dt class="product-of-the-week__details-term">Диаметр:</dt>
-          <dd class="product-of-the-week__details-definition">25 см</dd>
-          <dt class="product-of-the-week__details-term">Высота:</dt>
-          <dd class="product-of-the-week__details-definition">15 см</dd>
-        </dl>
-        <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/baskets-desktop.webp 1x, img/baskets-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/baskets-tablet.webp 1x, img/baskets-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/baskets-mobile.webp 1x, img/baskets-mobile@2x.webp 2x">
-          <source media="(min-width: 1150px)" srcset="img/baskets-desktop.jpg 1x, img/baskets-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/baskets-tablet.jpg 1x, img/baskets-tablet@2x.jpg 2x">
-          <img src="img/baskets-mobile.jpg" srcset="img/baskets-mobile@2x.jpg 2x" width="260" height="315" alt="Стопка из трёх шерстяных разноцветных корзин разного размера.">
-        </picture>
+        <div class="product-of-the-week__container wrapper-fluid wrapper-fluid--all-viewports">
+          <div class="product-of-the-week__row">
+            <h2 class="product-of-the-week__title">
+              <span class="product-of-the-week__title-text">Товар&#x20;<br class="br br--greater-medium-viewport"> недели</span>
+            </h2>
+            <p class="product-of-the-week__name">Вязаные корзинки</p>
+          </div>
+          <p class="product-of-the-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <dl class="product-of-the-week__details">
+
+              <dt class="product-of-the-week__details-term">Цвет:</dt>
+              <dd class="product-of-the-week__details-definition">«Тиффани»/серый</dd>
+
+
+              <dt class="product-of-the-week__details-term">Диаметр:</dt>
+              <dd class="product-of-the-week__details-definition">25 см</dd>
+
+
+              <dt class="product-of-the-week__details-term">Высота:</dt>
+              <dd class="product-of-the-week__details-definition">15 см</dd>
+
+          </dl>
+          <div class="product-of-the-week__img-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/baskets-desktop.webp 1x, img/baskets-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/baskets-tablet.webp 1x, img/baskets-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/baskets-mobile.webp 1x, img/baskets-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/baskets-desktop.jpg 1x, img/baskets-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/baskets-tablet.jpg 1x, img/baskets-tablet@2x.jpg 2x">
+              <img class="product-of-the-week__img" src="img/baskets-mobile.jpg" srcset="img/baskets-mobile@2x.jpg 2x" width="260" height="315" alt="Стопка из трёх шерстяных разноцветных корзин разного размера.">
+            </picture>
+          </div>
+          <p class="product-of-the-week__price">Цена: 990 руб.</p>
+          <a class="product-of-the-week__buy button button--basic button--index" href="blank.html">Заказать</a>
+        </div>
       </section>
     </main>
   </body>
